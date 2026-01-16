@@ -1,5 +1,6 @@
 # QBench Leaderboard Scenario Configuration
 # Queue Management Benchmark for AgentBeats
+# Test run with 1 episode
 
 [green_agent]
 agentbeats_id = "019bc4cf-c0ff-7263-a95b-d9f9d83d2df1"  # QBench Evaluator
