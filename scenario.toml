@@ -1,6 +1,6 @@
 # QBench Leaderboard Scenario Configuration
 # Queue Management Benchmark for AgentBeats
-# Test run with 1 episode - Docker image rebuilt with --card-url fix
+# Test run with 1 episode - v1.2: Added curl for health checks
 
 [green_agent]
 agentbeats_id = "019bc4cf-c0ff-7263-a95b-d9f9d83d2df1"  # QBench Evaluator
