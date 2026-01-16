@@ -1,0 +1,17 @@
+{
+  "image_digests": {
+    "green-agent": "ghcr.io/jyoti-ranjan-das845/qbench-evaluator@sha256:9cb1a433583673ccc7dfe1fd0450488df59d0a2fcdc6b30cafcf625f142644d0",
+    "test_agent": "ghcr.io/jyoti-ranjan-das845/qbench-purple-baseline@sha256:10a35e02880b783adbdd9aa45a177daebf4902986af3ea458518c84e98ec43c9",
+    "agentbeats-client": "ghcr.io/agentbeats/agentbeats-client@sha256:13dfe3ef4e583a80e7ce2fe3becd0ce3b879841368a7f4fa40b6ebbabeeb014e"
+  },
+  "timestamp": "2026-01-16T07:22:42Z",
+  "github_actions": {
+    "run_url": "https://github.com/jyotidasaiml-wq/qbench-leaderboard/actions/runs/21058879232",
+    "run_logs_url": "https://api.github.com/repos/jyotidasaiml-wq/qbench-leaderboard/actions/runs/21058879232/logs",
+    "ref": "refs/heads/test-submission",
+    "sha": "a36b5473df7ebc1220cc117c43e51e08c2df1bcf",
+    "repository_url": "https://github.com/jyotidasaiml-wq/qbench-leaderboard",
+    "workflow_ref": "jyotidasaiml-wq/qbench-leaderboard/.github/workflows/run-scenario.yml@refs/heads/test-submission",
+    "workflow_sha": "a36b5473df7ebc1220cc117c43e51e08c2df1bcf"
+  }
+}

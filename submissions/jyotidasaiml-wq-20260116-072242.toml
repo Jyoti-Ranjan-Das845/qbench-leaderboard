@@ -1,0 +1,29 @@
+# QBench Leaderboard Scenario Configuration
+# Queue Management Benchmark for AgentBeats
+# Test run with 1 episode - Testing correct role key in results.json
+
+[green_agent]
+agentbeats_id = "019bc4cf-c0ff-7263-a95b-d9f9d83d2df1"  # QBench Evaluator
+env = {}  # Green agent doesn't need API keys
+
+# Test purple agent
+[[participants]]
+agentbeats_id = "019bc4d0-6c28-7591-b583-71af6176a91e"
+name = "test_agent"
+env = { OPENAI_API_KEY = "${OPENAI_API_KEY_TEST_AGENT}" }
+
+[config]
+# Quick test: 1 scenario × 1 seed = 1 episode (~1 minute)
+scenario_types = [
+    "steady_low_load_baseline"
+]
+
+# Single seed for quick testing
+seeds = [1]
+
+# Single worker for 1 episode
+parallel = 1
+
+# Verbose logging for debugging
+verbose = true
+

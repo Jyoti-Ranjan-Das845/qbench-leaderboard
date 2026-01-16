@@ -1,0 +1,19 @@
+{
+  "participants": {
+    "agent": "019bc4d0-6c28-7591-b583-71af6176a91e",
+    "name": "test_agent"
+  },
+  "results": [
+    {
+      "pass_rate": 1.0,
+      "passed_episodes": 1,
+      "failed_episodes": 0,
+      "total_episodes": 1,
+      "routine_sla": 1.0,
+      "avg_wait_time": 0.0,
+      "avg_backlog": 5.25,
+      "max_backlog": 8,
+      "avg_utilization": 0.0
+    }
+  ]
+}
