@@ -5,29 +5,23 @@
 agentbeats_id = "019bc4cf-c0ff-7263-a95b-d9f9d83d2df1"  # QBench Evaluator
 env = {}  # Green agent doesn't need API keys
 
-# Example purple agent (contestants will add their own)
-# Uncomment and update to test:
-#
-# [[participants]]
-# agentbeats_id = "YOUR_PURPLE_AGENT_ID"  # Get from AgentBeats after registration
-# name = "contestant_agent"
-# env = { OPENAI_API_KEY = "${OPENAI_API_KEY_YOUR_AGENT}" }  # Reference GitHub secret
+# Test purple agent
+[[participants]]
+agentbeats_id = "019bc4d0-6c28-7591-b583-71af6176a91e"
+name = "test_agent"
+env = { OPENAI_API_KEY = "${OPENAI_API_KEY_TEST_AGENT}" }
 
 [config]
-# Scenario types to evaluate (all 5 QBench scenarios)
+# Quick test: 1 scenario × 1 seed = 1 episode (~1 minute)
 scenario_types = [
-    "backlog_cap_stability_guard",
-    "dynamic_backlog_adjustment",
-    "priority_queue",
-    "high_low_priority_queue",
-    "dynamic_capacity"
+    "priority_queue"
 ]
 
-# Random seeds for reproducibility (10 seeds per scenario = 50 total episodes)
-seeds = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# Single seed for quick testing
+seeds = [1]
 
-# Parallel workers for faster execution
-parallel = 4
+# Single worker for 1 episode
+parallel = 1
 
-# Verbose logging (false for cleaner CI output)
-verbose = false
+# Verbose logging for debugging
+verbose = true
