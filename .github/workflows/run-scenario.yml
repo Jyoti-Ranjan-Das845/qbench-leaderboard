@@ -71,6 +71,9 @@ jobs:
       - name: Run assessment
         run: docker compose up --timestamps --no-color --exit-code-from agentbeats-client --abort-on-container-exit
 
+      - name: Enrich results with participant name
+        run: python enrich_results.py --scenario scenario.toml --results output/results.json
+
       - name: Record provenance
         run: python record_provenance.py --compose docker-compose.yml --output output/provenance.json
 
